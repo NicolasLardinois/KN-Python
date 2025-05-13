@@ -22,11 +22,23 @@ class Room:
 
     @property
     def room_id(self): return self.__room_id
+
     @property
     def room_no(self): return self.__room_no
+    @room_no.setter
+    def room_no(self, value): self.__room_no = value
+
     @property
     def price_per_night(self): return self.__price_per_night
+    @price_per_night.setter
+    def price_per_night(self, value): self.__price_per_night = float(value)
+
     @property
     def room_type(self): return self.__room_type
+    @room_type.setter
+    def room_type(self, value): self.__room_type = value
+
     @property
     def hotel(self): return self.__hotel
+    @hotel.setter
+    def hotel(self, value): self.__hotel = value
