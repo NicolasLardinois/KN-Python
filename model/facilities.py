@@ -20,12 +20,18 @@ class Facility:
        
    @property
    def facility_id(self): return self.__facility_id
-   
+
    @property
    def name(self): return self.__name
-   
+   @name.setter
+   def name(self, value): self.__name = value
+
    @property
    def description(self): return self.__description
-   
+   @description.setter
+   def description(self, value): self.__description = value
+
    @property
    def hotel(self): return self.__hotel
+   @hotel.setter
+   def hotel(self, value): self.__hotel = value
