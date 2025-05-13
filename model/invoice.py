@@ -21,9 +21,18 @@ class Invoice:
 
     @property
     def invoice_id(self): return self.__invoice_id
+
     @property
     def booking(self): return self.__booking
+    @booking.setter
+    def booking(self, value): self.__booking = value
+
     @property
     def issue_date(self): return self.__issue_date
+    @issue_date.setter
+    def issue_date(self, value): self.__issue_date = value
+
     @property
     def total_amount(self): return self.__total_amount
+    @total_amount.setter
+    def total_amount(self, value): self.__total_amount = float(value)
