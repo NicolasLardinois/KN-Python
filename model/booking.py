@@ -25,15 +25,23 @@ class Booking:
        
    @property
    def booking_id(self): return self.__booking_id
-   
+
    @property
    def check_in_date(self): return self.__check_in_date
-   
+   @check_in_date.setter
+   def check_in_date(self, value): self.__check_in_date = value
+
    @property
    def check_out_date(self): return self.__check_out_date
-   
+   @check_out_date.setter
+   def check_out_date(self, value): self.__check_out_date = value
+
    @property
    def guest(self): return self.__guest
-   
+   @guest.setter
+   def guest(self, value): self.__guest = value
+
    @property
    def room(self): return self.__room
+   @room.setter
+   def room(self, value): self.__room = value
