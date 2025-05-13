@@ -25,15 +25,23 @@ class Address:
     
     @property
     def address_id(self): return self.__address_id
-    
+
     @property
     def street(self): return self.__street
-    
+    @street.setter
+    def street(self, value): self.__street = value
+
     @property
     def postal_code(self): return self.__postal_code
-    
+    @postal_code.setter
+    def postal_code(self, value): self.__postal_code = value
+
     @property
     def city(self): return self.__city
-    
+    @city.setter
+    def city(self, value): self.__city = value
+
     @property
     def country(self): return self.__country
+    @country.setter
+    def country(self, value): self.__country = value
